@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<businessObjectModel modelVersion="1.0" productVersion="7.3.0">
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.3.0">
     <businessObjects>
         <businessObject qualifiedName="com.company.model.VacationRequest">
-            <description>An employee vacation request.&#xD;
+            <description>An employee vacation request.&#13;
 Possible status values are: pending, approved, refused, processing cancellation and cancelled.</description>
             <fields>
                 <field type="LONG" length="255" name="requesterBonitaBPMId" nullable="false" collection="false"/>
@@ -17,12 +17,12 @@ Possible status values are: pending, approved, refused, processing cancellation 
             </fields>
             <uniqueConstraints/>
             <queries>
-                <query name="findModifiableByBonitaBPMId" content="SELECT l &#xD;&#xA;FROM VacationRequest l &#xD;&#xA;WHERE l.requesterBonitaBPMId = :requesterBonitaBPMId&#xD;&#xA;AND l.startDate &gt; CURRENT_DATE&#xD;&#xA;AND l.status IN('pending')&#xD;&#xA;ORDER BY l.startDate ASC" returnType="java.util.List">
+                <query name="findModifiableByBonitaBPMId" content="SELECT l &#13;&#10;FROM VacationRequest l &#13;&#10;WHERE l.requesterBonitaBPMId = :requesterBonitaBPMId&#13;&#10;AND l.startDate &gt; CURRENT_DATE&#13;&#10;AND l.status IN('pending')&#13;&#10;ORDER BY l.startDate ASC" returnType="java.util.List">
                     <queryParameters>
                         <queryParameter name="requesterBonitaBPMId" className="java.lang.Long"/>
                     </queryParameters>
                 </query>
-                <query name="findCancellableByBonitaBPMId" content="SELECT l &#xD;&#xA;FROM VacationRequest l &#xD;&#xA;WHERE l.requesterBonitaBPMId = :requesterBonitaBPMId&#xD;&#xA;AND l.status IN('pending', 'approved')&#xD;&#xA;ORDER BY l.startDate ASC" returnType="java.util.List">
+                <query name="findCancellableByBonitaBPMId" content="SELECT l &#13;&#10;FROM VacationRequest l &#13;&#10;WHERE l.requesterBonitaBPMId = :requesterBonitaBPMId&#13;&#10;AND l.status IN('pending', 'approved')&#13;&#10;ORDER BY l.startDate ASC" returnType="java.util.List">
                     <queryParameters>
                         <queryParameter name="requesterBonitaBPMId" className="java.lang.Long"/>
                     </queryParameters>

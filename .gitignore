@@ -1,3 +1,4 @@
+
 bin
 .classpath
 /application_resources
@@ -27,3 +28,10 @@ target/
 
 #only used as user preferences
 /database_connectors_properties
+
+
+node/
+node_modules/
+/web_fragments/*/*.js
+/web_widgets/*/*.js
+!/web_widgets/*/*.ctrl.js

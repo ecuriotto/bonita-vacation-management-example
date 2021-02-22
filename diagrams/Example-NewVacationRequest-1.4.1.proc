@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_WQx3EEUNEeeJkrA3PIO9Tw" name="Example-NewVacationRequest" version="1.4.1" author="antoine" bonitaVersion="7.7.0" bonitaModelVersion="7.6.0-002" configId="ACED000574002A4578616D706C652D4E65775661636174696F6E52657175657374372E362E302D303032372E372E307370">
-    <elements xmi:type="process:Pool" xmi:id="_WQx3EUUNEeeJkrA3PIO9Tw" name="New Vacation Request" welcomePageInternal="false" basedOnLookAndFeel="Default Application" version="1.4.1">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+  <process:MainProcess xmi:id="_WQx3EEUNEeeJkrA3PIO9Tw" name="Example-NewVacationRequest" version="1.4.1" author="antoine" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004" configId="ACED000574002A4578616D706C652D4E65775661636174696F6E52657175657374372E362E302D303032372E372E307370">
+    <elements xmi:type="process:Pool" xmi:id="_WQx3EUUNEeeJkrA3PIO9Tw" name="New Vacation Request" version="1.4.1">
       <elements xmi:type="process:Lane" xmi:id="_WQx3EkUNEeeJkrA3PIO9Tw" name="Employee lane" actor="_WQygaUUNEeeJkrA3PIO9Tw">
         <elements xmi:type="process:StartEvent" xmi:id="_WQx3E0UNEeeJkrA3PIO9Tw" name="New Vacation Request Start" outgoing="_WQygIUUNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQx3FEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQx3FUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQx3FkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQx3F0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:TextAnnotation" xmi:id="_WQx3GEUNEeeJkrA3PIO9Tw" text="Form for new vacation request is used to instantiate the process"/>
         <elements xmi:type="process:ServiceTask" xmi:id="_WQx3GUUNEeeJkrA3PIO9Tw" name="Deduct requested days from available days" outgoing="_WQygJUUNEeeJkrA3PIO9Tw" incoming="_WQygIUUNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQx3GkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQx3G0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQx3HEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQx3HUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
@@ -34,12 +32,11 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_WQx3KUUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_WQx3KkUNEeeJkrA3PIO9Tw" name="Notify manager request pending" outgoing="_WQygWkUNEeeJkrA3PIO9Tw" incoming="_WQygXUUNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQx3K0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQx3LEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQx3LUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQx3LkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_T5X2oEUUEeeJkrA3PIO9Tw" name="emailNotifyManagerRequestPending" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_T5X2oUUUEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
+          <connectors xmi:type="process:Connector" xmi:id="_T5X2oEUUEeeJkrA3PIO9Tw" name="emailNotifyManagerRequestPending" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.2.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_T5X2oUUUEeeJkrA3PIO9Tw" definitionId="email" version="1.2.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_T5X2okUUEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_T5X2o0UUEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
                   <referencedElements xmi:type="parameter:Parameter" xmi:id="_T5X2pEUUEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String"/>
@@ -106,6 +103,14 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_T5X2ykUUEeeJkrA3PIO9Tw" key="attachments">
                 <expression xmi:type="expression:ListExpression" xmi:id="_T5X2y0UUEeeJkrA3PIO9Tw"/>
               </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WMwPJHUlEeuShdm8Dx58vg" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_WMw2iHUlEeuShdm8Dx58vg" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_WMw2iXUlEeuShdm8Dx58vg" name="emailNotificationSender" typeClassname="java.lang.String"/>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WMwPJXUlEeuShdm8Dx58vg" key="trustCertificate">
+                <expression xmi:type="expression:Expression" xmi:id="_WMw2lXUlEeuShdm8Dx58vg" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
             </configuration>
           </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_WQx3W0UNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -115,12 +120,11 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_WQx3X0UNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_WQx3YEUNEeeJkrA3PIO9Tw" name="Update calendar request pending" outgoing="_WQygXUUNEeeJkrA3PIO9Tw" incoming="_WQygJUUNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQx3YUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQx3YkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQx3Y0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQx3ZEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="__HpesEUUEeeJkrA3PIO9Tw" name="calRegisterVacationEvent" definitionId="google-calendar-v3-create-event" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="__HpesUUUEeeJkrA3PIO9Tw" definitionId="google-calendar-v3-create-event" version="1.0.0" modelVersion="7.1.0-001">
+          <connectors xmi:type="process:Connector" xmi:id="__HpesEUUEeeJkrA3PIO9Tw" name="calRegisterVacationEvent" definitionId="google-calendar-v3-create-event" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.1.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="__HpesUUUEeeJkrA3PIO9Tw" definitionId="google-calendar-v3-create-event" version="1.1.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="__HpeskUUEeeJkrA3PIO9Tw" key="applicationName">
                 <expression xmi:type="expression:Expression" xmi:id="__Hpes0UUEeeJkrA3PIO9Tw" name="calendarApplicationName" content="calendarApplicationName" type="TYPE_PARAMETER" returnTypeFixed="true">
                   <referencedElements xmi:type="parameter:Parameter" xmi:id="__HpetEUUEeeJkrA3PIO9Tw" name="calendarApplicationName" typeClassname="java.lang.String"/>
@@ -275,6 +279,9 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="__HpfFEUUEeeJkrA3PIO9Tw" key="visibility">
                 <expression xmi:type="expression:Expression" xmi:id="__HpfFUUUEeeJkrA3PIO9Tw" content="" returnTypeFixed="true"/>
               </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WMwPUnUlEeuShdm8Dx58vg" key="authMode">
+                <expression xmi:type="expression:Expression" xmi:id="_WMw2knUlEeuShdm8Dx58vg" name="P12" content="P12" returnTypeFixed="true"/>
+              </parameters>
             </configuration>
             <outputs xmi:type="expression:Operation" xmi:id="__HpfFkUUEeeJkrA3PIO9Tw">
               <leftOperand xmi:type="expression:Expression" xmi:id="__HpfF0UUEeeJkrA3PIO9Tw" name="vacationRequest" content="vacationRequest" type="TYPE_VARIABLE" returnType="com.company.model.VacationRequest">
@@ -297,8 +304,7 @@
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_WQx31kUNEeeJkrA3PIO9Tw" name="Manager lane" actor="_WQygaUUNEeeJkrA3PIO9Tw">
         <elements xmi:type="process:Task" xmi:id="_WQx310UNEeeJkrA3PIO9Tw" name="Review request" outgoing="_WQygEEUNEeeJkrA3PIO9Tw" incoming="_WQygWkUNEeeJkrA3PIO9Tw" overrideActorsOfTheLane="false">
-          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_WQx32EUNEeeJkrA3PIO9Tw" source="_WQyeKEUNEeeJkrA3PIO9Tw"/>
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQx32UUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
+          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_WMxdJHUlEeuShdm8Dx58vg" source="_WQyeKEUNEeeJkrA3PIO9Tw"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQx32kUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQx320UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQx33EUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
@@ -360,13 +366,11 @@
               </expressions>
             </correlation>
           </BoundaryIntermediateEvents>
-          <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_WQx4AEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <confirmationMessage xmi:type="expression:Expression" xmi:id="_WQx4AUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_WQx4AkUNEeeJkrA3PIO9Tw">
             <targetForm xmi:type="expression:Expression" xmi:id="_WQx4A0UNEeeJkrA3PIO9Tw" name="reviewRequestForm" content="7993d6c3-5f3c-4404-8e8c-59d37f1ac672" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <filters xmi:type="process:ActorFilter" xmi:id="_cBKnsEUVEeeJkrA3PIO9Tw" name="requesterManager" definitionId="initiator-manager" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_cBKnsUUVEeeJkrA3PIO9Tw" definitionId="initiator-manager" version="1.0.0">
+          <filters xmi:type="process:ActorFilter" xmi:id="_cBKnsEUVEeeJkrA3PIO9Tw" name="requesterManager" definitionId="bonita-actorfilter-initiator-manager" definitionVersion="1.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_cBKnsUUVEeeJkrA3PIO9Tw" definitionId="bonita-actorfilter-initiator-manager" version="1.0">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_cBKnskUVEeeJkrA3PIO9Tw" key="autoAssign">
                 <expression xmi:type="expression:Expression" xmi:id="_cBKns0UVEeeJkrA3PIO9Tw" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
@@ -386,20 +390,18 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_WQx4DkUNEeeJkrA3PIO9Tw" name="3600000" content="3600000" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_WQx4D0UNEeeJkrA3PIO9Tw" name="Request approved?" outgoing="_WQygFEUNEeeJkrA3PIO9Tw _WQygGEUNEeeJkrA3PIO9Tw" incoming="_WQygUUUNEeeJkrA3PIO9Tw" exclusiveOutgoingTransition="true">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQx4EEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
+        <elements xmi:type="process:XORGateway" xmi:id="_WQx4D0UNEeeJkrA3PIO9Tw" name="Request approved?" outgoing="_WQygFEUNEeeJkrA3PIO9Tw _WQygGEUNEeeJkrA3PIO9Tw" incoming="_WQygUUUNEeeJkrA3PIO9Tw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQx4EUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQx4EkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQx4E0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_WQx4FEUNEeeJkrA3PIO9Tw" name="Notify employee request approved" outgoing="_WQygREUNEeeJkrA3PIO9Tw" incoming="_WQygGEUNEeeJkrA3PIO9Tw">
-          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_WQx4FUUNEeeJkrA3PIO9Tw" source="_WQyfUUUNEeeJkrA3PIO9Tw"/>
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQx4FkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
+          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_WMvn9HUlEeuShdm8Dx58vg" source="_WQyfUUUNEeeJkrA3PIO9Tw"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQx4F0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQx4GEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQx4GUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_ma5boEUVEeeJkrA3PIO9Tw" name="emailNotifyEmployeeRequestApproved" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_ma5boUUVEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
+          <connectors xmi:type="process:Connector" xmi:id="_ma5boEUVEeeJkrA3PIO9Tw" name="emailNotifyEmployeeRequestApproved" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.2.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_ma5boUUVEeeJkrA3PIO9Tw" definitionId="email" version="1.2.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ma5bokUVEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_ma5bo0UVEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
                   <referencedElements xmi:type="parameter:Parameter" xmi:id="_ma5bpEUVEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String"/>
@@ -466,6 +468,14 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ma5bykUVEeeJkrA3PIO9Tw" key="attachments">
                 <expression xmi:type="expression:ListExpression" xmi:id="_ma5by0UVEeeJkrA3PIO9Tw"/>
               </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WMwPZHUlEeuShdm8Dx58vg" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_WMw2inUlEeuShdm8Dx58vg" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_WMw2i3UlEeuShdm8Dx58vg" name="emailNotificationSender" typeClassname="java.lang.String"/>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WMwPZXUlEeuShdm8Dx58vg" key="trustCertificate">
+                <expression xmi:type="expression:Expression" xmi:id="_WMw2lnUlEeuShdm8Dx58vg" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
             </configuration>
           </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_WQx4RkUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -475,13 +485,12 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_WQx4SkUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_WQx4S0UNEeeJkrA3PIO9Tw" name="Notify employee request refused" outgoing="_WQygPUUNEeeJkrA3PIO9Tw" incoming="_WQygLUUNEeeJkrA3PIO9Tw">
-          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_WQx4TEUNEeeJkrA3PIO9Tw" source="_WQyeSkUNEeeJkrA3PIO9Tw"/>
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQx4TUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
+          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_WMvn_nUlEeuShdm8Dx58vg" source="_WQyeSkUNEeeJkrA3PIO9Tw"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQx4TkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQx4T0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQx4UEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_ov0roEUVEeeJkrA3PIO9Tw" name="emailNotifyEmployeeRequestRefused" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_ov0roUUVEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
+          <connectors xmi:type="process:Connector" xmi:id="_ov0roEUVEeeJkrA3PIO9Tw" name="emailNotifyEmployeeRequestRefused" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.2.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_ov0roUUVEeeJkrA3PIO9Tw" definitionId="email" version="1.2.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ov0rokUVEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_ov0ro0UVEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
                   <referencedElements xmi:type="parameter:Parameter" xmi:id="_ov0rpEUVEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String"/>
@@ -548,6 +557,14 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ov0rykUVEeeJkrA3PIO9Tw" key="attachments">
                 <expression xmi:type="expression:ListExpression" xmi:id="_ov0ry0UVEeeJkrA3PIO9Tw"/>
               </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WMwPd3UlEeuShdm8Dx58vg" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_WMw2jHUlEeuShdm8Dx58vg" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_WMw2jXUlEeuShdm8Dx58vg" name="emailNotificationSender" typeClassname="java.lang.String"/>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WMwPeHUlEeuShdm8Dx58vg" key="trustCertificate">
+                <expression xmi:type="expression:Expression" xmi:id="_WMw2l3UlEeuShdm8Dx58vg" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
             </configuration>
           </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_WQx4fUUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -557,13 +574,12 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_WQx4gUUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_WQx4gkUNEeeJkrA3PIO9Tw" name="Notify HR request refused" outgoing="_WQygHUUNEeeJkrA3PIO9Tw" incoming="_WQygMUUNEeeJkrA3PIO9Tw">
-          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_WQx4g0UNEeeJkrA3PIO9Tw" source="_WQyeKUUNEeeJkrA3PIO9Tw"/>
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQx4hEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
+          <textAnnotationAttachment xmi:type="process:TextAnnotationAttachment" xmi:id="_WMvoCHUlEeuShdm8Dx58vg" source="_WQyeKUUNEeeJkrA3PIO9Tw"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQx4hUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQx4hkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQx4h0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_2eQVEEUWEeeJkrA3PIO9Tw" name="emailNotifyHRRequestRefused" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_2eQVEUUWEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
+          <connectors xmi:type="process:Connector" xmi:id="_2eQVEEUWEeeJkrA3PIO9Tw" name="emailNotifyHRRequestRefused" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.2.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_2eQVEUUWEeeJkrA3PIO9Tw" definitionId="email" version="1.2.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2eQVEkUWEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_2eQVE0UWEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
                   <referencedElements xmi:type="parameter:Parameter" xmi:id="_2eQVFEUWEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String"/>
@@ -632,6 +648,14 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2eQVO0UWEeeJkrA3PIO9Tw" key="attachments">
                 <expression xmi:type="expression:ListExpression" xmi:id="_2eQVPEUWEeeJkrA3PIO9Tw"/>
               </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WMwPinUlEeuShdm8Dx58vg" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_WMw2jnUlEeuShdm8Dx58vg" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_WMw2j3UlEeuShdm8Dx58vg" name="emailNotificationSender" typeClassname="java.lang.String"/>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WMwPi3UlEeuShdm8Dx58vg" key="trustCertificate">
+                <expression xmi:type="expression:Expression" xmi:id="_WMw2mHUlEeuShdm8Dx58vg" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
             </configuration>
           </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_WQx4tUUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -641,7 +665,6 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_WQyeIkUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_WQyeI0UNEeeJkrA3PIO9Tw" name="New Vacation Request End" incoming="_WQygQUUNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQyeJEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQyeJUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQyeJkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQyeJ0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
@@ -649,25 +672,21 @@
         <elements xmi:type="process:TextAnnotation" xmi:id="_WQyeKEUNEeeJkrA3PIO9Tw" text="Form for review task"/>
         <elements xmi:type="process:TextAnnotation" xmi:id="_WQyeKUUNEeeJkrA3PIO9Tw" text="Email notification of refusal to HR"/>
         <elements xmi:type="process:ANDGateway" xmi:id="_WQyeKkUNEeeJkrA3PIO9Tw" name=" after refusal branch" outgoing="_WQygLUUNEeeJkrA3PIO9Tw _WQygKUUNEeeJkrA3PIO9Tw _WQygMUUNEeeJkrA3PIO9Tw _WQygY0UNEeeJkrA3PIO9Tw" incoming="_WQygFEUNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQyeK0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQyeLEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQyeLUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQyeLkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ANDGateway" xmi:id="_WQyeL0UNEeeJkrA3PIO9Tw" name="after refusal join" outgoing="_WQygNUUNEeeJkrA3PIO9Tw" incoming="_WQygHUUNEeeJkrA3PIO9Tw _WQygOUUNEeeJkrA3PIO9Tw _WQygPUUNEeeJkrA3PIO9Tw _WQygZkUNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQyeMEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQyeMUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQyeMkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQyeM0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_WQyeNEUNEeeJkrA3PIO9Tw" name="approved refused join" outgoing="_WQygQUUNEeeJkrA3PIO9Tw" incoming="_WQygNUUNEeeJkrA3PIO9Tw _WQygYEUNEeeJkrA3PIO9Tw" exclusiveOutgoingTransition="true">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQyeNUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
+        <elements xmi:type="process:XORGateway" xmi:id="_WQyeNEUNEeeJkrA3PIO9Tw" name="approved refused join" outgoing="_WQygQUUNEeeJkrA3PIO9Tw" incoming="_WQygNUUNEeeJkrA3PIO9Tw _WQygYEUNEeeJkrA3PIO9Tw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQyeNkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQyeN0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQyeOEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_WQyeOUUNEeeJkrA3PIO9Tw" name="Credit days from refused request" outgoing="_WQygOUUNEeeJkrA3PIO9Tw" incoming="_WQygKUUNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQyeOkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQyeO0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQyePEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQyePUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
@@ -691,12 +710,11 @@
         </elements>
         <elements xmi:type="process:TextAnnotation" xmi:id="_WQyeSkUNEeeJkrA3PIO9Tw" text="Email notification of refusal to employee"/>
         <elements xmi:type="process:ServiceTask" xmi:id="_WQyeS0UNEeeJkrA3PIO9Tw" name="Send reminder" outgoing="_WQygS0UNEeeJkrA3PIO9Tw" incoming="_WQygSEUNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQyeTEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQyeTUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQyeTkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQyeT0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_DvBnkEUXEeeJkrA3PIO9Tw" name="emailRemindManagerRequestPending" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_DvBnkUUXEeeJkrA3PIO9Tw" definitionId="email" version="1.0.0" modelVersion="7.1.0-001">
+          <connectors xmi:type="process:Connector" xmi:id="_DvBnkEUXEeeJkrA3PIO9Tw" name="emailRemindManagerRequestPending" definitionId="email" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.2.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_DvBnkUUXEeeJkrA3PIO9Tw" definitionId="email" version="1.2.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_DvBnkkUXEeeJkrA3PIO9Tw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_DvBnk0UXEeeJkrA3PIO9Tw" name="emailServerAddress" content="emailServerAddress" type="TYPE_PARAMETER" returnTypeFixed="true">
                   <referencedElements xmi:type="parameter:Parameter" xmi:id="_DvBnlEUXEeeJkrA3PIO9Tw" name="emailServerAddress" typeClassname="java.lang.String"/>
@@ -763,6 +781,14 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_DvBnukUXEeeJkrA3PIO9Tw" key="attachments">
                 <expression xmi:type="expression:ListExpression" xmi:id="_DvBnu0UXEeeJkrA3PIO9Tw"/>
               </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WMwPnXUlEeuShdm8Dx58vg" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_WMw2kHUlEeuShdm8Dx58vg" name="emailNotificationSender" content="emailNotificationSender" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_WMw2kXUlEeuShdm8Dx58vg" name="emailNotificationSender" typeClassname="java.lang.String"/>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WMwPnnUlEeuShdm8Dx58vg" key="trustCertificate">
+                <expression xmi:type="expression:Expression" xmi:id="_WMw2mXUlEeuShdm8Dx58vg" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
             </configuration>
           </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_WQyefEUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -772,30 +798,26 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_WQyegEUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_WQyegUUNEeeJkrA3PIO9Tw" name="End Reminder" incoming="_WQygS0UNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQyegkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQyeg0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQyehEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQyehUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_WQyehkUNEeeJkrA3PIO9Tw" name="reviewRequestEscalationJoin" outgoing="_WQygUUUNEeeJkrA3PIO9Tw" incoming="_WQygEEUNEeeJkrA3PIO9Tw _WQygVEUNEeeJkrA3PIO9Tw" exclusiveOutgoingTransition="true">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQyeh0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
+        <elements xmi:type="process:XORGateway" xmi:id="_WQyehkUNEeeJkrA3PIO9Tw" name="reviewRequestEscalationJoin" outgoing="_WQygUUUNEeeJkrA3PIO9Tw" incoming="_WQygEEUNEeeJkrA3PIO9Tw _WQygVEUNEeeJkrA3PIO9Tw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQyeiEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQyeiUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQyeikUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndTerminatedEvent" xmi:id="_WQyei0UNEeeJkrA3PIO9Tw" name="end when request cancelled" incoming="_WQygV0UNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQyejEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQyejUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQyejkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQyej0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_WQyekEUNEeeJkrA3PIO9Tw" name="Update calendar request approved" outgoing="_WQygYEUNEeeJkrA3PIO9Tw" incoming="_WQygREUNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQyekUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQyekkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQyek0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQyelEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_TML5IEUXEeeJkrA3PIO9Tw" name="calUpdateVacationEventName" definitionId="google-calendar-v3-update-event" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_TML5IUUXEeeJkrA3PIO9Tw" definitionId="google-calendar-v3-update-event" version="1.0.0" modelVersion="7.1.0-001">
+          <connectors xmi:type="process:Connector" xmi:id="_TML5IEUXEeeJkrA3PIO9Tw" name="calUpdateVacationEventName" definitionId="google-calendar-v3-update-event" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.1.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_TML5IUUXEeeJkrA3PIO9Tw" definitionId="google-calendar-v3-update-event" version="1.1.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_TML5IkUXEeeJkrA3PIO9Tw" key="applicationName">
                 <expression xmi:type="expression:Expression" xmi:id="_TML5I0UXEeeJkrA3PIO9Tw" name="calendarApplicationName" content="calendarApplicationName" type="TYPE_PARAMETER" returnTypeFixed="true">
                   <referencedElements xmi:type="parameter:Parameter" xmi:id="_TML5JEUXEeeJkrA3PIO9Tw" name="calendarApplicationName" typeClassname="java.lang.String"/>
@@ -943,6 +965,9 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_TML5gEUXEeeJkrA3PIO9Tw" key="visibility">
                 <expression xmi:type="expression:Expression" xmi:id="_TML5gUUXEeeJkrA3PIO9Tw" content="" returnTypeFixed="true"/>
               </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WMwPy3UlEeuShdm8Dx58vg" key="authMode">
+                <expression xmi:type="expression:Expression" xmi:id="_WMw2k3UlEeuShdm8Dx58vg" name="P12" content="P12" returnTypeFixed="true"/>
+              </parameters>
             </configuration>
           </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_WQyfTEUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -953,12 +978,11 @@
         </elements>
         <elements xmi:type="process:TextAnnotation" xmi:id="_WQyfUUUNEeeJkrA3PIO9Tw" text="Email notification of approval to employee"/>
         <elements xmi:type="process:ServiceTask" xmi:id="_WQyfUkUNEeeJkrA3PIO9Tw" name="Update calendar request refused" outgoing="_WQygZkUNEeeJkrA3PIO9Tw" incoming="_WQygY0UNEeeJkrA3PIO9Tw">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQyfU0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQyfVEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQyfVUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQyfVkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_XQajkEUXEeeJkrA3PIO9Tw" name="calRemoveRefusedVacationEvent" definitionId="google-calendar-v3-delete-event" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_XQajkUUXEeeJkrA3PIO9Tw" definitionId="google-calendar-v3-delete-event" version="1.0.0" modelVersion="7.1.0-001">
+          <connectors xmi:type="process:Connector" xmi:id="_XQajkEUXEeeJkrA3PIO9Tw" name="calRemoveRefusedVacationEvent" definitionId="google-calendar-v3-delete-event" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.1.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_XQajkUUXEeeJkrA3PIO9Tw" definitionId="google-calendar-v3-delete-event" version="1.1.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_XQajkkUXEeeJkrA3PIO9Tw" key="applicationName">
                 <expression xmi:type="expression:Expression" xmi:id="_XQbKoEUXEeeJkrA3PIO9Tw" name="calendarApplicationName" content="calendarApplicationName" type="TYPE_PARAMETER" returnTypeFixed="true">
                   <referencedElements xmi:type="parameter:Parameter" xmi:id="_XQbKoUUXEeeJkrA3PIO9Tw" name="calendarApplicationName" typeClassname="java.lang.String"/>
@@ -998,6 +1022,9 @@
                   <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_OLyVqDKREei1Pa3g_QwzWw" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
                 </expression>
               </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WMwP1XUlEeuShdm8Dx58vg" key="authMode">
+                <expression xmi:type="expression:Expression" xmi:id="_WMw2lHUlEeuShdm8Dx58vg" name="P12" content="P12" returnTypeFixed="true"/>
+              </parameters>
             </configuration>
           </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_WQyfxkUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -1009,7 +1036,6 @@
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_WQyfy0UNEeeJkrA3PIO9Tw" name="ReviewerBackup lane" actor="_WQygakUNEeeJkrA3PIO9Tw">
         <elements xmi:type="process:Task" xmi:id="_WQyfzEUNEeeJkrA3PIO9Tw" name="Review request escalation" outgoing="_WQygVEUNEeeJkrA3PIO9Tw" incoming="_WQygTkUNEeeJkrA3PIO9Tw" overrideActorsOfTheLane="false">
-          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQyfzUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WQyfzkUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WQyfz0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WQyf0EUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
@@ -1055,8 +1081,6 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_WQyf50UNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_WQyf6EUNEeeJkrA3PIO9Tw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_WQyf6UUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_WQyf6kUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <confirmationMessage xmi:type="expression:Expression" xmi:id="_WQyf60UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_WQyf7EUNEeeJkrA3PIO9Tw">
             <targetForm xmi:type="expression:Expression" xmi:id="_WQyf7UUNEeeJkrA3PIO9Tw" name="reviewRequestForm" content="7993d6c3-5f3c-4404-8e8c-59d37f1ac672" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
@@ -1075,8 +1099,6 @@
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_WQyf9UUNEeeJkrA3PIO9Tw" name="HR lane"/>
-      <mandatorySymbol xmi:type="expression:Expression" xmi:id="_WQyf9kUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-      <mandatoryLabel xmi:type="expression:Expression" xmi:id="_WQyf90UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
       <data xmi:type="process:BusinessObjectData" xmi:id="_WQyf-EUNEeeJkrA3PIO9Tw" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest">
         <defaultValue xmi:type="expression:Expression" xmi:id="_eIsmwEq5EeeZ-cvVQD6SQA" name="createVacationRequest" content="import com.company.model.VacationRequest&#xD;&#xA;&#xD;&#xA;// Create a new empty vacation request&#xD;&#xA;def newVacationRequest = new VacationRequest()&#xD;&#xA;&#xD;&#xA;// Get the id of the user who create the process instance using&#xD;&#xA;// Bonita Engine API&#xD;&#xA;def processAPI = apiAccessor.processAPI&#xD;&#xA;long userId = processAPI.getProcessInstance(processInstanceId).startedBy&#xD;&#xA;&#xD;&#xA;// Set the requester user id on the request&#xD;&#xA;newVacationRequest.requesterBonitaBPMId = userId&#xD;&#xA;&#xD;&#xA;// Update start and end date on the request&#xD;&#xA;newVacationRequest.startDate = startDateContract&#xD;&#xA;newVacationRequest.returnDate = returnDateContract&#xD;&#xA;&#xD;&#xA;// Update number of days&#xD;&#xA;newVacationRequest.numberOfDays = numberOfDaysContract&#xD;&#xA;&#xD;&#xA;// Set the status to pending&#xD;&#xA;newVacationRequest.status = &quot;pending&quot;&#xD;&#xA;&#xD;&#xA;newVacationRequest.newRequestProcessInstanceId = processInstanceId&#xD;&#xA;&#xD;&#xA;// Return the new object initialized&#xD;&#xA;return newVacationRequest" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.VacationRequest">
           <referencedElements xmi:type="expression:Expression" xmi:id="_eIsmwUq5EeeZ-cvVQD6SQA" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
@@ -1102,75 +1124,59 @@
           </referencedElements>
         </defaultValue>
       </data>
-      <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_WQygCEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-      <confirmationMessage xmi:type="expression:Expression" xmi:id="_WQygCUUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
       <formMapping xmi:type="process:FormMapping" xmi:id="_WQygCkUNEeeJkrA3PIO9Tw">
         <targetForm xmi:type="expression:Expression" xmi:id="_WQygC0UNEeeJkrA3PIO9Tw" name="newVacationRequestForm" content="ad4f9f15-4f34-4193-a17d-ef4b15ea1e1f" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
-      <recapPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQygDEUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_WQygDUUNEeeJkrA3PIO9Tw" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_WQygDkUNEeeJkrA3PIO9Tw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
-      <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_WQygD0UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
       <connections xmi:type="process:SequenceFlow" xmi:id="_WQygEEUNEeeJkrA3PIO9Tw" target="_WQyehkUNEeeJkrA3PIO9Tw" source="_WQx310UNEeeJkrA3PIO9Tw">
-        <expression xmi:type="expression:Expression" xmi:id="_WQygEUUNEeeJkrA3PIO9Tw" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_WQygEkUNEeeJkrA3PIO9Tw"/>
         <condition xmi:type="expression:Expression" xmi:id="_WQygE0UNEeeJkrA3PIO9Tw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_WQygFEUNEeeJkrA3PIO9Tw" name="no" target="_WQyeKkUNEeeJkrA3PIO9Tw" source="_WQx4D0UNEeeJkrA3PIO9Tw" isDefault="true">
-        <expression xmi:type="expression:Expression" xmi:id="_WQygFUUNEeeJkrA3PIO9Tw" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_WQygFkUNEeeJkrA3PIO9Tw"/>
         <condition xmi:type="expression:Expression" xmi:id="_WQygF0UNEeeJkrA3PIO9Tw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_WQygGEUNEeeJkrA3PIO9Tw" name="yes" target="_WQx4FEUNEeeJkrA3PIO9Tw" source="_WQx4D0UNEeeJkrA3PIO9Tw">
-        <expression xmi:type="expression:Expression" xmi:id="_WQygGUUNEeeJkrA3PIO9Tw" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_WQygGkUNEeeJkrA3PIO9Tw"/>
         <condition xmi:type="expression:Expression" xmi:id="_WQygG0UNEeeJkrA3PIO9Tw" name="isApproved" content="vacationRequest.status == &quot;approved&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
           <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_OL0K1TKREei1Pa3g_QwzWw" name="vacationRequest" dataType="_WQygmUUNEeeJkrA3PIO9Tw" className="com.company.model.VacationRequest"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_WQygHUUNEeeJkrA3PIO9Tw" target="_WQyeL0UNEeeJkrA3PIO9Tw" source="_WQx4gkUNEeeJkrA3PIO9Tw">
-        <expression xmi:type="expression:Expression" xmi:id="_WQygHkUNEeeJkrA3PIO9Tw" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_WQygH0UNEeeJkrA3PIO9Tw"/>
         <condition xmi:type="expression:Expression" xmi:id="_WQygIEUNEeeJkrA3PIO9Tw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_WQygIUUNEeeJkrA3PIO9Tw" target="_WQx3GUUNEeeJkrA3PIO9Tw" source="_WQx3E0UNEeeJkrA3PIO9Tw">
-        <expression xmi:type="expression:Expression" xmi:id="_WQygIkUNEeeJkrA3PIO9Tw" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_WQygI0UNEeeJkrA3PIO9Tw"/>
         <condition xmi:type="expression:Expression" xmi:id="_WQygJEUNEeeJkrA3PIO9Tw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_WQygJUUNEeeJkrA3PIO9Tw" target="_WQx3YEUNEeeJkrA3PIO9Tw" source="_WQx3GUUNEeeJkrA3PIO9Tw">
-        <expression xmi:type="expression:Expression" xmi:id="_WQygJkUNEeeJkrA3PIO9Tw" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_WQygJ0UNEeeJkrA3PIO9Tw"/>
         <condition xmi:type="expression:Expression" xmi:id="_WQygKEUNEeeJkrA3PIO9Tw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_WQygKUUNEeeJkrA3PIO9Tw" target="_WQyeOUUNEeeJkrA3PIO9Tw" source="_WQyeKkUNEeeJkrA3PIO9Tw">
-        <expression xmi:type="expression:Expression" xmi:id="_WQygKkUNEeeJkrA3PIO9Tw" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_WQygK0UNEeeJkrA3PIO9Tw"/>
         <condition xmi:type="expression:Expression" xmi:id="_WQygLEUNEeeJkrA3PIO9Tw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_WQygLUUNEeeJkrA3PIO9Tw" target="_WQx4S0UNEeeJkrA3PIO9Tw" source="_WQyeKkUNEeeJkrA3PIO9Tw">
-        <expression xmi:type="expression:Expression" xmi:id="_WQygLkUNEeeJkrA3PIO9Tw" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_WQygL0UNEeeJkrA3PIO9Tw"/>
         <condition xmi:type="expression:Expression" xmi:id="_WQygMEUNEeeJkrA3PIO9Tw" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_WQygMUUNEeeJkrA3PIO9Tw" target="_WQx4gkUNEeeJkrA3PIO9Tw" source="_WQyeKkUNEeeJkrA3PIO9Tw">
-        <expression xmi:type="expression:Expression" xmi:id="_WQygMkUNEeeJkrA3PIO9Tw" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_WQygM0UNEeeJkrA3PIO9Tw"/>
         <condition xmi:type="expression:Expression" xmi:id="_WQygNEUNEeeJkrA3PIO9Tw" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_WQygNUUNEeeJkrA3PIO9Tw" target="_WQyeNEUNEeeJkrA3PIO9Tw" source="_WQyeL0UNEeeJkrA3PIO9Tw">
-        <expression xmi:type="expression:Expression" xmi:id="_WQygNkUNEeeJkrA3PIO9Tw" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_WQygN0UNEeeJkrA3PIO9Tw"/>
         <condition xmi:type="expression:Expression" xmi:id="_WQygOEUNEeeJkrA3PIO9Tw" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_WQygOUUNEeeJkrA3PIO9Tw" target="_WQyeL0UNEeeJkrA3PIO9Tw" source="_WQyeOUUNEeeJkrA3PIO9Tw">
-        <expression xmi:type="expression:Expression" xmi:id="_WQygOkUNEeeJkrA3PIO9Tw" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_WQygO0UNEeeJkrA3PIO9Tw"/>
         <condition xmi:type="expression:Expression" xmi:id="_WQygPEUNEeeJkrA3PIO9Tw" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_WQygPUUNEeeJkrA3PIO9Tw" target="_WQyeL0UNEeeJkrA3PIO9Tw" source="_WQx4S0UNEeeJkrA3PIO9Tw">
-        <expression xmi:type="expression:Expression" xmi:id="_WQygPkUNEeeJkrA3PIO9Tw" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_WQygP0UNEeeJkrA3PIO9Tw"/>
         <condition xmi:type="expression:Expression" xmi:id="_WQygQEUNEeeJkrA3PIO9Tw" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
@@ -1179,7 +1185,6 @@
         <condition xmi:type="expression:Expression" xmi:id="_WQygQ0UNEeeJkrA3PIO9Tw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_WQygREUNEeeJkrA3PIO9Tw" target="_WQyekEUNEeeJkrA3PIO9Tw" source="_WQx4FEUNEeeJkrA3PIO9Tw">
-        <expression xmi:type="expression:Expression" xmi:id="_WQygRUUNEeeJkrA3PIO9Tw" content=""/>
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_WQygRkUNEeeJkrA3PIO9Tw"/>
         <condition xmi:type="expression:Expression" xmi:id="_WQygR0UNEeeJkrA3PIO9Tw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
@@ -1229,7 +1234,7 @@
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_WQygaUUNEeeJkrA3PIO9Tw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_WQygakUNEeeJkrA3PIO9Tw" documentation="This actor represents the people who can review vacation requests if a manager does not review them in the specified time." name="vacationReviewerBackup"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_oIb9IDP3Eei3W8hk9dX2TQ" name="Qualification" version="7.6.0-002" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_oIb9IDP3Eei3W8hk9dX2TQ" name="Qualification" version="7.12.0-004" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_oIb9ITP3Eei3W8hk9dX2TQ">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_oIb9IjP3Eei3W8hk9dX2TQ" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_oIb9IzP3Eei3W8hk9dX2TQ">
@@ -1248,77 +1253,84 @@
             <users xmi:type="actormapping:Users" xmi:id="_oIb9KzP3Eei3W8hk9dX2TQ"/>
           </actorMapping>
         </actorMappings>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9LDP3Eei3W8hk9dX2TQ" type="ACTOR_FILTER" definitionId="initiator-manager" definitionVersion="1.0.0" implementationId="initiator-manager-impl" implementationVersion="1.0.0"/>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9LTP3Eei3W8hk9dX2TQ" type="CONNECTOR" definitionId="email" definitionVersion="1.0.0" implementationId="email-impl" implementationVersion="1.0.15"/>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9LjP3Eei3W8hk9dX2TQ" type="CONNECTOR" definitionId="google-calendar-v3-create-event" definitionVersion="1.0.0" implementationId="google-calendar-create-event-impl" implementationVersion="1.0.0"/>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9LzP3Eei3W8hk9dX2TQ" type="CONNECTOR" definitionId="google-calendar-v3-update-event" definitionVersion="1.0.0" implementationId="google-calendar-update-event-impl" implementationVersion="1.0.0"/>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_oIb9MDP3Eei3W8hk9dX2TQ" type="CONNECTOR" definitionId="google-calendar-v3-delete-event" definitionVersion="1.0.0" implementationId="google-calendar-delete-event-impl" implementationVersion="1.0.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_WNmjcHUlEeuShdm8Dx58vg" type="ACTOR_FILTER" definitionId="bonita-actorfilter-initiator-manager" definitionVersion="1.0" implementationId="bonita-actorfilter-initiator-manager-impl" implementationVersion="1.0.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_WNvGUHUlEeuShdm8Dx58vg" type="CONNECTOR" definitionId="email" definitionVersion="1.2.0" implementationId="email-impl" implementationVersion="1.3.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_WOZ0s3UlEeuShdm8Dx58vg" type="CONNECTOR" definitionId="google-calendar-v3-create-event" definitionVersion="1.1.0" implementationId="google-calendar-v3-create-event-impl" implementationVersion="1.1.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_WOyPMHUlEeuShdm8Dx58vg" type="CONNECTOR" definitionId="google-calendar-v3-update-event" definitionVersion="1.1.0" implementationId="google-calendar-v3-update-event-impl" implementationVersion="1.1.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_WPRXYHUlEeuShdm8Dx58vg" type="CONNECTOR" definitionId="google-calendar-v3-delete-event" definitionVersion="1.1.0" implementationId="google-calendar-v3-delete-event-impl" implementationVersion="1.1.0"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIb9MTP3Eei3W8hk9dX2TQ" id="ACTOR_FILTER">
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_oIb9MjP3Eei3W8hk9dX2TQ" id="initiator-manager-impl-1.0.0">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9MzP3Eei3W8hk9dX2TQ" key="initiator-manager-impl -- 1.0.0" value="bonita-userfilter-initiator-manager-impl-1.0.0-SNAPSHOT.jar" type="ACTOR_FILTER"/>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_WNsDAHUlEeuShdm8Dx58vg" id="bonita-actorfilter-initiator-manager-impl-1.0.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WNt4MHUlEeuShdm8Dx58vg" key="bonita-actorfilter-initiator-manager-impl -- 1.0.0" value="bonita-actorfilter-initiator-manager-1.0.0.jar" type="ACTOR_FILTER"/>
           </children>
         </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIb9NDP3Eei3W8hk9dX2TQ" id="CONNECTOR">
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_oIb9NTP3Eei3W8hk9dX2TQ" id="email-impl-1.0.15">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9NjP3Eei3W8hk9dX2TQ" key="email-impl -- 1.0.15" value="bonita-connector-email-impl-1.0.15.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9NzP3Eei3W8hk9dX2TQ" key="email-impl -- 1.0.15" value="mail-1.4.5.jar" type="CONNECTOR"/>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_WOOOgHUlEeuShdm8Dx58vg" id="email-impl-1.3.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOZ0sHUlEeuShdm8Dx58vg" key="email-impl -- 1.3.0" value="bonita-connector-email-1.3.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOZ0sXUlEeuShdm8Dx58vg" key="email-impl -- 1.3.0" value="javax.mail-1.6.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOZ0snUlEeuShdm8Dx58vg" key="email-impl -- 1.3.0" value="javax.mail-api-1.6.2.jar" type="CONNECTOR"/>
           </children>
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_oIb9ODP3Eei3W8hk9dX2TQ" id="google-calendar-create-event-impl-1.0.0">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9OTP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-create-event-impl-1.0.0.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9OjP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="jetty-util-6.1.26.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9OzP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="servlet-api-2.5-20081211.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9PDP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-common-1.0.0.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9PTP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="jsr305-1.3.9.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9PjP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="google-oauth-client-java6-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9PzP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="google-http-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9QDP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="httpclient-4.0.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9QTP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="google-http-client-jackson2-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9QjP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="google-api-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9QzP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="google-oauth-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9RDP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="jackson-core-2.1.3.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9RTP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="commons-logging-1.1.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9RjP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="google-oauth-client-jetty-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9RzP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="google-api-services-calendar-v3-rev87-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9SDP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="jetty-6.1.26.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9STP3Eei3W8hk9dX2TQ" key="google-calendar-create-event-impl -- 1.0.0" value="httpcore-4.0.1.jar" type="CONNECTOR"/>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_WOvL4HUlEeuShdm8Dx58vg" id="google-calendar-v3-create-event-impl-1.1.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBEHUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="bonita-connector-google-calendar-v3-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBEXUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="auto-value-annotations-1.7.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBEnUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="checker-compat-qual-2.5.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBE3UlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="error_prone_annotations-2.3.4.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBFHUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="failureaccess-1.0.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBFXUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="google-api-client-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBFnUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="google-api-services-calendar-v3-rev411-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBF3UlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="google-auth-library-credentials-0.21.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBGHUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="google-auth-library-oauth2-http-0.21.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBGXUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="google-http-client-1.36.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBGnUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="google-http-client-jackson2-1.36.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBG3UlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="google-oauth-client-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBHHUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="grpc-context-1.22.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBHXUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="guava-29.0-android.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBHnUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="j2objc-annotations-1.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBH3UlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="jsr305-3.0.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBIHUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBIXUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="opencensus-api-0.24.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WOxBInUlEeuShdm8Dx58vg" key="google-calendar-v3-create-event-impl -- 1.1.0" value="opencensus-contrib-http-util-0.24.0.jar" type="CONNECTOR"/>
           </children>
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_oIb9SjP3Eei3W8hk9dX2TQ" id="google-calendar-update-event-impl-1.0.0">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9SzP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-update-event-impl-1.0.0.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9TDP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="jetty-util-6.1.26.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9TTP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="servlet-api-2.5-20081211.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9TjP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-common-1.0.0.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9TzP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="jsr305-1.3.9.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9UDP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-java6-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9UTP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-http-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIb9UjP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="httpclient-4.0.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckMDP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-http-client-jackson2-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckMTP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-api-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckMjP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckMzP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="jackson-core-2.1.3.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckNDP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="commons-logging-1.1.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckNTP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-jetty-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckNjP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-api-services-calendar-v3-rev87-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckNzP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="jetty-6.1.26.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckODP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="httpcore-4.0.1.jar" type="CONNECTOR"/>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_WPFKIHUlEeuShdm8Dx58vg" id="google-calendar-v3-update-event-impl-1.1.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiMHUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="bonita-connector-google-calendar-v3-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiMXUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="auto-value-annotations-1.7.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiMnUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="checker-compat-qual-2.5.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiM3UlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="error_prone_annotations-2.3.4.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiNHUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="failureaccess-1.0.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiNXUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-api-client-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiNnUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-api-services-calendar-v3-rev411-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiN3UlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-auth-library-credentials-0.21.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiOHUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-auth-library-oauth2-http-0.21.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiOXUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-http-client-1.36.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiOnUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-http-client-jackson2-1.36.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiO3UlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-oauth-client-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiPHUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="grpc-context-1.22.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiPXUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="guava-29.0-android.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPPiPnUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="j2objc-annotations-1.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPQJQHUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="jsr305-3.0.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPQJQXUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPQJQnUlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="opencensus-api-0.24.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WPQJQ3UlEeuShdm8Dx58vg" key="google-calendar-v3-update-event-impl -- 1.1.0" value="opencensus-contrib-http-util-0.24.0.jar" type="CONNECTOR"/>
           </children>
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_oIckOTP3Eei3W8hk9dX2TQ" id="google-calendar-delete-event-impl-1.0.0">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckOjP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-delete-event-impl-1.0.0.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckOzP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="jetty-util-6.1.26.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckPDP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="servlet-api-2.5-20081211.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckPTP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-common-1.0.0.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckPjP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="jsr305-1.3.9.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckPzP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="google-oauth-client-java6-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckQDP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="google-http-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckQTP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="httpclient-4.0.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckQjP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="google-http-client-jackson2-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckQzP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="google-api-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckRDP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="google-oauth-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckRTP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="jackson-core-2.1.3.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckRjP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="commons-logging-1.1.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckRzP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="google-oauth-client-jetty-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckSDP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="google-api-services-calendar-v3-rev87-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckSTP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="jetty-6.1.26.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_oIckSjP3Eei3W8hk9dX2TQ" key="google-calendar-delete-event-impl -- 1.0.0" value="httpcore-4.0.1.jar" type="CONNECTOR"/>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_WPn8sHUlEeuShdm8Dx58vg" id="google-calendar-v3-delete-event-impl-1.1.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WP_wIHUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="bonita-connector-google-calendar-v3-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WP_wIXUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="auto-value-annotations-1.7.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WP_wInUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="checker-compat-qual-2.5.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WP_wI3UlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="error_prone_annotations-2.3.4.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WP_wJHUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="failureaccess-1.0.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WP_wJXUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="google-api-client-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WP_wJnUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="google-api-services-calendar-v3-rev411-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WP_wJ3UlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="google-auth-library-credentials-0.21.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WP_wKHUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="google-auth-library-oauth2-http-0.21.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WP_wKXUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="google-http-client-1.36.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WP_wKnUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="google-http-client-jackson2-1.36.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WP_wK3UlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="google-oauth-client-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WP_wLHUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="grpc-context-1.22.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WQAXMHUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="guava-29.0-android.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WQAXMXUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="j2objc-annotations-1.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WQAXMnUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="jsr305-3.0.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WQAXM3UlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WQAXNHUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="opencensus-api-0.24.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_WQAXNXUlEeuShdm8Dx58vg" key="google-calendar-v3-delete-event-impl -- 1.1.0" value="opencensus-contrib-http-util-0.24.0.jar" type="CONNECTOR"/>
           </children>
         </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_oIckSzP3Eei3W8hk9dX2TQ" id="DATA_TYPES"/>
@@ -1655,19 +1667,19 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WQzFsEUNEeeJkrA3PIO9Tw" id="(0.5,1.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WQzFsUUNEeeJkrA3PIO9Tw" id="(0.5,0.0)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_WQzFskUNEeeJkrA3PIO9Tw" type="4003" element="_WQx32EUNEeeJkrA3PIO9Tw" source="_WQzFOUUNEeeJkrA3PIO9Tw" target="_WQygvEUNEeeJkrA3PIO9Tw">
+    <edges xmi:type="notation:Connector" xmi:id="_WQzFskUNEeeJkrA3PIO9Tw" type="4003" source="_WQzFOUUNEeeJkrA3PIO9Tw" target="_WQygvEUNEeeJkrA3PIO9Tw">
       <styles xmi:type="notation:FontStyle" xmi:id="_WQzFs0UNEeeJkrA3PIO9Tw" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WQzFtEUNEeeJkrA3PIO9Tw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_WQzFtUUNEeeJkrA3PIO9Tw" type="4003" element="_WQx4FUUNEeeJkrA3PIO9Tw" source="_WQzFbEUNEeeJkrA3PIO9Tw" target="_WQygz0UNEeeJkrA3PIO9Tw">
+    <edges xmi:type="notation:Connector" xmi:id="_WQzFtUUNEeeJkrA3PIO9Tw" type="4003" source="_WQzFbEUNEeeJkrA3PIO9Tw" target="_WQygz0UNEeeJkrA3PIO9Tw">
       <styles xmi:type="notation:FontStyle" xmi:id="_WQzFtkUNEeeJkrA3PIO9Tw" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WQzFt0UNEeeJkrA3PIO9Tw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_WQzFuEUNEeeJkrA3PIO9Tw" type="4003" element="_WQx4TEUNEeeJkrA3PIO9Tw" source="_WQzFVEUNEeeJkrA3PIO9Tw" target="_WQyg0kUNEeeJkrA3PIO9Tw">
+    <edges xmi:type="notation:Connector" xmi:id="_WQzFuEUNEeeJkrA3PIO9Tw" type="4003" source="_WQzFVEUNEeeJkrA3PIO9Tw" target="_WQyg0kUNEeeJkrA3PIO9Tw">
       <styles xmi:type="notation:FontStyle" xmi:id="_WQzFuUUNEeeJkrA3PIO9Tw" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WQzFukUNEeeJkrA3PIO9Tw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_WQzFu0UNEeeJkrA3PIO9Tw" type="4003" element="_WQx4g0UNEeeJkrA3PIO9Tw" source="_WQzFP0UNEeeJkrA3PIO9Tw" target="_WQzFMkUNEeeJkrA3PIO9Tw">
+    <edges xmi:type="notation:Connector" xmi:id="_WQzFu0UNEeeJkrA3PIO9Tw" type="4003" source="_WQzFP0UNEeeJkrA3PIO9Tw" target="_WQzFMkUNEeeJkrA3PIO9Tw">
       <styles xmi:type="notation:FontStyle" xmi:id="_WQzFvEUNEeeJkrA3PIO9Tw" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WQzFvUUNEeeJkrA3PIO9Tw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
