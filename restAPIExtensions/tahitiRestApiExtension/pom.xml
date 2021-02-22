@@ -32,12 +32,15 @@
     </properties>
 
     <dependencies>
+        <!-- Bonita -->
         <dependency>
-            <groupId>com.bonitasoft.web</groupId>
-            <artifactId>bonita-web-extensions-sp</artifactId>
+            <groupId>org.bonitasoft.web</groupId>
+            <artifactId>bonita-web-extensions</artifactId>
             <version>${bonita.version}</version>
             <scope>provided</scope>
         </dependency>
+
+
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-all</artifactId>
@@ -50,6 +53,8 @@
             <version>${slf4j-api.version}</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- Bonita BDM -->
         <dependency>
             <groupId>com.company.model</groupId>
             <artifactId>bdm-client</artifactId>
@@ -62,6 +67,7 @@
             <version>1.0.0</version>
             <scope>provided</scope>
         </dependency>
+
 
         <!-- test -->
         <dependency>
