@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_XflzkEUNEeeJkrA3PIO9Tw" name="Example-ModifyPendingVacationRequest" version="1.4.1" author="antoine" bonitaVersion="7.10.0" bonitaModelVersion="7.10.0-001" configId="ACED00057400364578616D706C652D4D6F6469667950656E64696E675661636174696F6E52657175657374372E31302E302D303031372E31302E307370">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+  <process:MainProcess xmi:id="_XflzkEUNEeeJkrA3PIO9Tw" name="Example-ModifyPendingVacationRequest" version="1.4.1" author="antoine" bonitaVersion="7.12.4" bonitaModelVersion="7.12.0-004" configId="ACED00057400364578616D706C652D4D6F6469667950656E64696E675661636174696F6E52657175657374372E31302E302D303031372E31302E307370">
     <elements xmi:type="process:Pool" xmi:id="_XflzkUUNEeeJkrA3PIO9Tw" name="Modify Pending Vacation Request" version="1.4.1">
       <elements xmi:type="process:Lane" xmi:id="_XflzkkUNEeeJkrA3PIO9Tw" name="Employee lane" actor="_Xfl0aUUNEeeJkrA3PIO9Tw">
         <elements xmi:type="process:StartEvent" xmi:id="_Xflzk0UNEeeJkrA3PIO9Tw" name="Start modify" outgoing="_Xfl0ZkUNEeeJkrA3PIO9Tw">
@@ -96,8 +96,8 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Xflz1UUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Xflz1kUNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Xflz10UNEeeJkrA3PIO9Tw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_-CX80EqzEeeZ-cvVQD6SQA" name="calUpdateEventDetails" definitionId="google-calendar-v3-update-event" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_-CX80UqzEeeZ-cvVQD6SQA" definitionId="google-calendar-v3-update-event" version="1.0.0" modelVersion="7.1.0-001">
+          <connectors xmi:type="process:Connector" xmi:id="_-CX80EqzEeeZ-cvVQD6SQA" name="calUpdateEventDetails" definitionId="google-calendar-v3-update-event" event="ON_ENTER" ignoreErrors="true" definitionVersion="1.1.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_-CX80UqzEeeZ-cvVQD6SQA" definitionId="google-calendar-v3-update-event" version="1.1.0" modelVersion="7.1.0-001">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-CX80kqzEeeZ-cvVQD6SQA" key="applicationName">
                 <expression xmi:type="expression:Expression" xmi:id="_-CX800qzEeeZ-cvVQD6SQA" name="calendarApplicationName" content="calendarApplicationName" type="TYPE_PARAMETER" returnTypeFixed="true">
                   <referencedElements xmi:type="parameter:Parameter" xmi:id="_-CX81EqzEeeZ-cvVQD6SQA" name="calendarApplicationName" typeClassname="java.lang.String"/>
@@ -246,6 +246,9 @@
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-CX9MEqzEeeZ-cvVQD6SQA" key="visibility">
                 <expression xmi:type="expression:Expression" xmi:id="_-CX9MUqzEeeZ-cvVQD6SQA" content="" returnTypeFixed="true"/>
               </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_G81nUNtDEeubj-9JavtOjw" key="authMode">
+                <expression xmi:type="expression:Expression" xmi:id="_G81nhdtDEeubj-9JavtOjw" name="P12" content="P12" returnTypeFixed="true"/>
+              </parameters>
             </configuration>
           </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_Xfl0OkUNEeeJkrA3PIO9Tw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -313,7 +316,7 @@
         <condition xmi:type="expression:Expression" xmi:id="_Xfl0aEUNEeeJkrA3PIO9Tw" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_Xfl0aUUNEeeJkrA3PIO9Tw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_hfesIDP3Eei3W8hk9dX2TQ" name="Test" version="7.10.0-001" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_hfesIDP3Eei3W8hk9dX2TQ" name="Test" version="7.12.0-004" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_hfesITP3Eei3W8hk9dX2TQ">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_hfesIjP3Eei3W8hk9dX2TQ" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_hfesIzP3Eei3W8hk9dX2TQ">
@@ -324,27 +327,29 @@
             <users xmi:type="actormapping:Users" xmi:id="_hfesJjP3Eei3W8hk9dX2TQ"/>
           </actorMapping>
         </actorMappings>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_hfesJzP3Eei3W8hk9dX2TQ" type="CONNECTOR" definitionId="google-calendar-v3-update-event" definitionVersion="1.0.0" implementationId="google-calendar-update-event-impl" implementationVersion="1.0.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_G9g8oNtDEeubj-9JavtOjw" type="CONNECTOR" definitionId="google-calendar-v3-update-event" definitionVersion="1.1.0" implementationId="google-calendar-v3-update-event-impl" implementationVersion="1.1.0"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_hffTMDP3Eei3W8hk9dX2TQ" id="ACTOR_FILTER"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_hffTMTP3Eei3W8hk9dX2TQ" id="CONNECTOR">
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_hffTMjP3Eei3W8hk9dX2TQ" id="google-calendar-update-event-impl-1.0.0">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTMzP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-update-event-impl-1.0.0.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTNDP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="jetty-util-6.1.26.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTNTP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="servlet-api-2.5-20081211.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTNjP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-common-1.0.0.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTNzP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="jsr305-1.3.9.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTODP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-java6-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTOTP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-http-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTOjP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="httpclient-4.0.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTOzP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-http-client-jackson2-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTPDP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-api-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTPTP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTPjP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="jackson-core-2.1.3.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTPzP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="commons-logging-1.1.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTQDP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-jetty-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTQTP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="google-api-services-calendar-v3-rev87-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTQjP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="jetty-6.1.26.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_hffTQzP3Eei3W8hk9dX2TQ" key="google-calendar-update-event-impl -- 1.0.0" value="httpcore-4.0.1.jar" type="CONNECTOR"/>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_G-ZtcNtDEeubj-9JavtOjw" id="google-calendar-v3-update-event-impl-1.1.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-soYNtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="bonita-connector-google-calendar-v3-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-soYdtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="auto-value-annotations-1.7.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-soYttDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="checker-compat-qual-2.5.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-soY9tDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="error_prone_annotations-2.3.4.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-soZNtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="failureaccess-1.0.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-soZdtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-api-client-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-soZttDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-api-services-calendar-v3-rev411-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-soZ9tDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-auth-library-credentials-0.21.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-soaNtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-auth-library-oauth2-http-0.21.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-soadtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-http-client-1.36.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-soattDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-http-client-jackson2-1.36.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-soa9tDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-oauth-client-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-sobNtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="grpc-context-1.22.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-sobdtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="guava-29.0-android.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-sobttDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="j2objc-annotations-1.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-sob9tDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="jsr305-3.0.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-socNtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-socdtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="opencensus-api-0.24.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G-socttDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="opencensus-contrib-http-util-0.24.0.jar" type="CONNECTOR"/>
           </children>
         </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_hffTRDP3Eei3W8hk9dX2TQ" id="DATA_TYPES"/>
@@ -360,7 +365,7 @@
         <parameters xmi:type="parameter:Parameter" xmi:id="_hffTTjP3Eei3W8hk9dX2TQ" name="calendarServiceAccountP12File" value="/path/to/p12/file.p12" typeClassname="java.lang.String"/>
         <parameters xmi:type="parameter:Parameter" xmi:id="_hffTTzP3Eei3W8hk9dX2TQ" name="calendarServiceAccountUser" value="firstName.lastName@mydomain.com" typeClassname="java.lang.String"/>
       </configurations>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_jpvIMOgoEeiFb7LWyoBoVw" name="Staging" version="7.10.0-001" username="walter.bates" password="bpm">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_jpvIMOgoEeiFb7LWyoBoVw" name="Staging" version="7.12.0-004" username="walter.bates" password="bpm">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_jpvITOgoEeiFb7LWyoBoVw">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_jpvITegoEeiFb7LWyoBoVw" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_jpvITugoEeiFb7LWyoBoVw">
@@ -371,27 +376,29 @@
             <users xmi:type="actormapping:Users" xmi:id="_jpvIUegoEeiFb7LWyoBoVw"/>
           </actorMapping>
         </actorMappings>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_jpvIMegoEeiFb7LWyoBoVw" type="CONNECTOR" definitionId="google-calendar-v3-update-event" definitionVersion="1.0.0" implementationId="google-calendar-update-event-impl" implementationVersion="1.0.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_G-w50NtDEeubj-9JavtOjw" type="CONNECTOR" definitionId="google-calendar-v3-update-event" definitionVersion="1.1.0" implementationId="google-calendar-v3-update-event-impl" implementationVersion="1.1.0"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_jpvIMugoEeiFb7LWyoBoVw" id="ACTOR_FILTER"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_jpvIM-goEeiFb7LWyoBoVw" id="CONNECTOR">
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_jpvINOgoEeiFb7LWyoBoVw" id="google-calendar-update-event-impl-1.0.0">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvINegoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-update-event-impl-1.0.0.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvINugoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="jetty-util-6.1.26.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIN-goEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="servlet-api-2.5-20081211.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIOOgoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="bonita-connector-google-calendar-v3-common-1.0.0.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIOegoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="jsr305-1.3.9.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIOugoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-java6-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIO-goEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="google-http-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIPOgoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="httpclient-4.0.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIPegoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="google-http-client-jackson2-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIPugoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="google-api-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIP-goEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIQOgoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="jackson-core-2.1.3.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIQegoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="commons-logging-1.1.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIQugoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="google-oauth-client-jetty-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIQ-goEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="google-api-services-calendar-v3-rev87-1.18.0-rc.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIROgoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="jetty-6.1.26.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_jpvIRegoEeiFb7LWyoBoVw" key="google-calendar-update-event-impl -- 1.0.0" value="httpcore-4.0.1.jar" type="CONNECTOR"/>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_G_aaENtDEeubj-9JavtOjw" id="google-calendar-v3-update-event-impl-1.1.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_tVANtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="bonita-connector-google-calendar-v3-1.1.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_tVAdtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="auto-value-annotations-1.7.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_tVAttDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="checker-compat-qual-2.5.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_tVA9tDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="error_prone_annotations-2.3.4.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_tVBNtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="failureaccess-1.0.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_t8ENtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-api-client-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_t8EdtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-api-services-calendar-v3-rev411-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_t8EttDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-auth-library-credentials-0.21.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_t8E9tDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-auth-library-oauth2-http-0.21.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_t8FNtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-http-client-1.36.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_ujINtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-http-client-jackson2-1.36.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_ujIdtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="google-oauth-client-1.25.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_vKMNtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="grpc-context-1.22.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_vKMdtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="guava-29.0-android.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_vKMttDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="j2objc-annotations-1.3.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_vKM9tDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="jsr305-3.0.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_vKNNtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_vKNdtDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="opencensus-api-0.24.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_G_vKNttDEeubj-9JavtOjw" key="google-calendar-v3-update-event-impl -- 1.1.0" value="opencensus-contrib-http-util-0.24.0.jar" type="CONNECTOR"/>
           </children>
         </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_jpvIRugoEeiFb7LWyoBoVw" id="DATA_TYPES"/>

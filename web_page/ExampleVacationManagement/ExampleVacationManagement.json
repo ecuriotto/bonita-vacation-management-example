@@ -1,9 +1,9 @@
 {
-  "designerVersion" : "1.10.18",
-  "previousDesignerVersion" : "1.9.24",
+  "modelVersion" : "2.0",
+  "previousArtifactVersion" : "1.10.18",
   "id" : "ExampleVacationManagement",
   "name" : "ExampleVacationManagement",
-  "lastUpdate" : 1576192075460,
+  "lastUpdate" : 1625236689195,
   "rows" : [
     [
       {

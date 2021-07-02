@@ -1,9 +1,9 @@
 {
-  "designerVersion" : "1.10.18",
-  "previousDesignerVersion" : "1.9.24",
+  "modelVersion" : "2.0",
+  "previousArtifactVersion" : "1.10.18",
   "id" : "HelloLayout",
   "name" : "HelloLayout",
-  "lastUpdate" : 1576192090856,
+  "lastUpdate" : 1625236689378,
   "rows" : [
     [
       {
